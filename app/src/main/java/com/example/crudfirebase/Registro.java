@@ -47,7 +47,7 @@ public class Registro extends AppCompatActivity {
 
         if(!iNombre.isEmpty() && !iEdad.isEmpty() && !iTrabajo.isEmpty() && !iSalario.isEmpty()){
 
-        //mapeo de datos
+        //mapeo de datos holi:V hgjhvhjv
         Map<String, Object> datos = new HashMap<>();
         //ingresar el dato
         datos.put("nombre", iNombre);
