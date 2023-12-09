@@ -29,18 +29,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void Logear(View view){
+    public void logear(View view){
         String login_ = login.getText().toString();
         String contra = contrasenia.getText().toString();
 
        if(!login_.isEmpty() && !contra.isEmpty()){
-           mAuth.signInWithEmailAndPassword(login_ , contra).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+           mAuth.signInWithEmailAndPassword(login_,contra).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                @Override
                public void onComplete(@NonNull Task<AuthResult> task) {
                    if(task.isSuccessful()){
                        registro();
                        String uid = task.getResult().getUser().getUid();
                        Toast.makeText(MainActivity.this, "UID: "+uid, Toast.LENGTH_SHORT).show();
+
                    }else{
                        Toast.makeText(MainActivity.this, "ESTE USUARIO NO EXISTE", Toast.LENGTH_SHORT).show();
                    }
@@ -55,4 +56,12 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, Registro.class);
         startActivity(i);
     }
+
+    public void registrase_email(View view){
+         Intent intent = new Intent(this, RegistrarEnElLogin.class);
+         startActivity(intent);
+         //da error posiblemente se deba a que no es asincrono o se genero mal lo que seria el registro
+        //de la clase arreglarlo yo del futuro
+    }
+
 }

@@ -8,23 +8,23 @@
 
     <TextView
         android:id="@+id/lblDatos"
-        android:layout_width="175dp"
-        android:layout_height="46dp"
+        android:layout_width="335dp"
+        android:layout_height="43dp"
         android:layout_marginTop="16dp"
-        android:text="Datos"
+        android:text="Ingresar Datos "
         android:textAlignment="center"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtNombre"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombreEdit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/txtNombre"
+        android:id="@+id/txtNombreEdit"
         android:layout_width="408dp"
         android:layout_height="39dp"
-        android:layout_marginBottom="220dp"
+        android:layout_marginBottom="188dp"
         android:ems="10"
         android:hint="Coloque el Nombre"
         android:inputType="textPersonName"
@@ -34,51 +34,36 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/txtEdad"
-        android:layout_width="412dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:hint="Edad"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/txtCuantoGana"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombre"
-        app:layout_constraintVertical_bias="0.302" />
-
-    <EditText
         android:id="@+id/txtTrabajo"
         android:layout_width="406dp"
         android:layout_height="46dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginBottom="36dp"
         android:ems="10"
         android:hint="que trabajo tienes?"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/txtCuantoGana"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEdad"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnRegistrar"
-        android:layout_width="262dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="16dp"
-        android:onClick="Registrar"
+        android:layout_width="417dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="registrar"
         android:text="Agregar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMostrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/txtCuantoGana"
         android:layout_width="405dp"
         android:layout_height="43dp"
-        android:layout_marginBottom="196dp"
+        android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="Cuanto gana de salario?"
         android:inputType="number"
@@ -86,4 +71,42 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="409dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="52dp"
+        android:onClick="mostrar"
+        android:text="Mostrar Informacion del usuario"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtRut"
+        android:layout_width="404dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Coloque Su Rut"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombreEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtEdad"
+        android:layout_width="404dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Coloque Su Edad"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtTrabajo"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreEdit"
+        tools:layout_editor_absoluteX="2dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

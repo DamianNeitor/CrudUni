@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarUse">
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="4dp"
+        android:text="Editar"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="404dp"
+        android:layout_height="629dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        tools:layout_editor_absoluteX="1dp">
+
+        <TextView
+            android:id="@+id/lblId"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:text="id"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblIdEdit"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lblRut"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Rut"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblRutEdit"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lblNombre"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:text="Nombre"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtNombreEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lblEdad"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="edad"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtEdadEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lblOficio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oficio"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtOficioEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lblCuantoGana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cuanto gana"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/txtCuantoGanaEdit"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnGuardarCambios"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:onClick="editar"
+            android:text="Guardar Cambios"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
